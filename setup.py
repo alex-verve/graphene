@@ -85,7 +85,10 @@ setup(
         'six>=1.10.0,<2',
         'graphql-core>=1.1,<2',
         'graphql-relay>=0.4.5,<1',
-        'promise>=2.0,<2.4',
+        'promise==2.3.1',
+    ],
+    dependency_links=[
+        'git+git://github.com/alex-verve/graphene@thread-safe-2.3.1#egg=promise-2.3.1',
     ],
     tests_require=tests_require,
     extras_require={
